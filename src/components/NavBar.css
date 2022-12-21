@@ -1,0 +1,14 @@
+.show {
+    height: 191px !important;
+}
+
+.hide {
+    height: 0px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+nav {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
