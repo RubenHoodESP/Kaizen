@@ -1,4 +1,4 @@
-import background from '../assets/background.svg';
+import background from '../assets/Background.svg';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { useInView } from 'react-intersection-observer';
 
