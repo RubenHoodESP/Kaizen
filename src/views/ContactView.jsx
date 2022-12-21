@@ -1,6 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax"
 import { PageLayout } from "../layout"
-import background from '../assets/background-4.svg'
+import background from '../assets/Background-4.svg'
 import { ContactForm } from "../components"
 
 export const ContactView = () => {

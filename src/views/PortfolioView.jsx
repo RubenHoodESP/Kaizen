@@ -1,6 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax"
 import { PageLayout } from "../layout"
-import background from '../assets/background-2.svg'
+import background from '../assets/Background-2.svg'
 
 export const PortfolioView = () => {
   return (

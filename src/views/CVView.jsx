@@ -1,6 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax"
 import { PageLayout } from "../layout"
-import background from '../assets/background-3.svg'
+import background from '../assets/Background-3.svg'
 
 export const CVView = () => {
   return (
