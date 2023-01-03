@@ -1,5 +1,5 @@
-import { Banner } from "../components"
-import { PageLayout } from "../layout"
+import { Banner } from "../components";
+import { PageLayout } from "../layout";
 
 
 export const IntroductionView = () => {

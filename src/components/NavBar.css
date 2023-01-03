@@ -12,3 +12,16 @@ nav {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
+
+.nav-item:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #fff;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+}
