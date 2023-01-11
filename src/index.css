@@ -17,10 +17,10 @@ html {
     transition: opacity 1s ease-in;
 }
 
-#navbar {
+/* #navbar {
     -webkit-animation: 2s ease 0s normal forwards 1 fadein;
     animation: 2s ease 0s normal forwards 1 fadein;
-}
+} */
 
 @keyframes fadein {
     0% { opacity:0; }
@@ -30,4 +30,14 @@ html {
 @-webkit-keyframes fadein {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes borderin {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+@-webkit-keyframes borderin {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
 }

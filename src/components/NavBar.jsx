@@ -12,7 +12,7 @@ export const NavBar = () => {
     }
 
     return (
-        <nav id="navbar" className="fixed top-0 left-0 right-0 bg-transparent border-b z-10">
+        <nav id="navbar" className="fixed top-0 left-0 right-0 bg-transparent z-10">
             <div className="flex items-center justify-between flex-wrap">
                 <span className="p-4 text-white text-lg font-roboto font-light">Kaizen</span>
                 <button onClick={onToggle} type="button" className="inline-flex items-center mx-3 p-2 ml-3 text-sm text-gray-900 rounded-lg md:hidden focus:outline-none focus:ring-1 focus:ring-gray-100" aria-controls="navbar-default" aria-expanded="false">
@@ -21,16 +21,16 @@ export const NavBar = () => {
                 </button>
                 <div id="navbar-default" className={`${show ? 'show' : ''} hide w-full md:w-auto md:block md:auto md:h-auto`}>
                     <ul className="flex flex-col justify-end p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
-                        <li className="nav-item">
+                        <li id="nav_item-1" className="nav-item">
                             <a href="#intro" className="font-roboto text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">Intro</a>
                         </li>
-                        <li className="nav-item">
+                        <li id="nav_item-2" className="nav-item">
                             <a href="#portfolio" className="font-roboto text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">Portfolio</a>
                         </li>
-                        <li className="nav-item">
+                        <li id="nav_item-3" className="nav-item">
                             <a href="#cv" className="font-roboto text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">{t('Resume')}</a>
                         </li>
-                        <li className="nav-item">
+                        <li id="nav_item-4" className="nav-item">
                             <a href="#contact" className="font-roboto text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">{t('Contact')}</a>
                         </li>
                     </ul>
