@@ -1,0 +1,14 @@
+{
+    "Intro": {
+        "WebDeveloper": "Desarrollador Web",
+        "Description": "Más de 3 años en el sector, trabajando en múltiples proyectos grandes con las herramientas más conocidas y demandadas."
+    },
+    "Resume": "CV",
+    "Portfolio": "Portfolio",
+    "Contact": "Contacto",
+    "ContactPage": {
+        "Email": "Tu email",
+        "Message": "Tu mensaje",
+        "Send": "Enviar"
+    }
+}

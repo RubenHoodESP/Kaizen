@@ -1,0 +1,14 @@
+{
+    "Intro": {
+        "WebDeveloper": "Web Developer",
+        "Description": "I have been in the sector for more than 3 years working on multiple large projects with the most popular and demanded tools."
+    },
+    "Resume": "Resume",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact",
+    "ContactPage": {
+        "Email": "Your email",
+        "Message": "Your message",
+        "Send": "Send"
+    }
+}
