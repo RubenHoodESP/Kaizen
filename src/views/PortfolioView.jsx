@@ -24,7 +24,7 @@ export const PortfolioView = () => {
             className="h-screen"
           >
             <div className="absolute mx-5 inset-0 flex flex-col items-center justify-center">
-              <p className="text-6xl text-white font-thin mb-8">{t('Portfolio')}</p>
+              <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
               <div className="container max-w-6xl">
                 <Carousel />
               </div>
@@ -37,7 +37,7 @@ export const PortfolioView = () => {
     return (
       <div id="portfolio" className="h-screen flex bg-secondary">
         <div className="absolute h-screen mx-5 flex flex-col items-center justify-center">
-          <p className="text-6xl text-white font-thin mb-8">{t('Portfolio')}</p>
+          <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
           <div className="container max-w-6xl">
             <Carousel />
           </div>
