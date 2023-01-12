@@ -23,7 +23,7 @@ export const ContactView = () => {
               className="h-screen"
             >
               <div className="mx-5 absolute inset-0 flex flex-col items-center justify-center">
-                <p className="text-6xl text-white font-thin mb-5">{t('Contact')}</p>
+                <p className="text-6xl text-white font-roboto-condensed font-thin mb-5">{t('Contact')}</p>
                 <ContactForm />
               </div>
             </ParallaxBanner>

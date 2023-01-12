@@ -32,6 +32,16 @@ html {
     100% { opacity: 1; }
 }
 
+@keyframes fadein70 {
+    0% { opacity:0; }
+    100% { opacity:0.7; }
+}
+
+@-webkit-keyframes fadein70 {
+    0% { opacity: 0; }
+    100% { opacity: 0.7; }
+}
+
 @keyframes borderin {
     0% { transform: scaleX(0); }
     100% { transform: scaleX(1); }
