@@ -5,3 +5,43 @@
 .bg-secondary {
     background: linear-gradient(rgba(19, 58, 100, 0.8), rgba(19, 58, 100, 1));
 }
+
+li {
+    cursor: pointer;
+}
+
+.cv-item:after {
+    display: block;
+    content: "";
+    border-bottom: solid 1px #ffffff;
+    transform: scaleX(0);
+    transition: transform ease-in-out .2s;
+}
+
+.cv-item:hover:after {
+   transform: scaleX(1);
+}
+
+.amaris, .nttdata, .accenture {
+    opacity: 0;
+    -webkit-animation: 1s ease-in-out 0s normal forwards 1 fadein;
+    animation: 1s ease-in-out 0s normal forwards 1 fadein;
+}
+
+#role {
+    opacity: 0;
+    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+}
+
+#time {
+    opacity: 0;
+    -webkit-animation: 1s ease .25s normal forwards 1 fadein;
+    animation: 1s ease .25s normal forwards 1 fadein;
+}
+
+#job-description {
+    opacity: 0;
+    -webkit-animation: 1s ease .25s normal forwards 1 fadein;
+    animation: 1s ease .5s normal forwards 1 fadein;
+}

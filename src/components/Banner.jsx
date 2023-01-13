@@ -34,7 +34,7 @@ export const Banner = () => {
         <div ref={ref} className={'mx-10 md:mx-5 absolute inset-0 flex flex-col items-center justify-center'}>
           <p id='name' className="text-5xl md:text-8xl text-white font-roboto-condensed mb-5">Rubén García</p>
           <p id='subtitle' className='font-roboto-condensed text-3xl text-white font-light opacity-70'>{t('Intro.WebDeveloper')}</p>
-          <p id='description' className='max-w-2xl font-roboto font-thin text-white mt-14 text-justify text-2xl'>{t('Intro.Description')}</p>
+          <p id='description' className='max-w-2xl font-roboto font-thin text-white mt-14 text-2xl'>{t('Intro.Description')}</p>
         </div>
       </div>
     )
