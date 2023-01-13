@@ -2,7 +2,7 @@
     background-color: black;
 }
 
-img {
+.carousel-item > img {
     opacity: 0.3;
     -webkit-filter: blur(1px);
     filter: blur(1px);

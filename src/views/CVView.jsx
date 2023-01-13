@@ -83,9 +83,9 @@ export const CVView = () => {
                   <div className="flex">
                     <div className="flex col mr-5">
                       <ul className="ml-2 text-white font-roboto text-lg">
-                        <li className="cv-item p-2 border-l" onClick={hide1}>Amaris</li>
-                        <li className="cv-item p-2 border-l" onClick={hide2}>NTTData</li>
-                        <li className="cv-item p-2 border-l" onClick={hide3}>Accenture</li>
+                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide1 }>Amaris</li>
+                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide2 }>NTTData</li>
+                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide3 }>Accenture</li>
                       </ul>
                     </div>
                     <div className="col p-2 w-full text-white font-roboto">
@@ -110,9 +110,9 @@ export const CVView = () => {
             <div className="flex">
               <div className="flex col">
                 <ul className="ml-2 text-white font-roboto text-lg">
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={hide1}>Amaris</li>
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={hide2}>NTTData</li>
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={hide3}>Accenture</li>
+                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide1 }>Amaris</li>
+                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide2 }>NTTData</li>
+                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide3 }>Accenture</li>
                 </ul>
               </div>
               <div className="col p-2 w-full text-white font-roboto">
