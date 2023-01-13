@@ -1,3 +1,7 @@
+import project1 from '../assets/Project-1.png'
+import project2 from '../assets/Project-2.png'
+import project3 from '../assets/Project-3.png'
+import './Carousel.css'
 
 export const Carousel = () => {
   return (
@@ -27,7 +31,7 @@ export const Carousel = () => {
       <div className="carousel-inner relative w-full overflow-hidden border shadow-lg">
         <div className="carousel-item active relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+            src={ project1 }
             className="block w-full"
             alt="..."
           />
@@ -38,7 +42,7 @@ export const Carousel = () => {
         </div>
         <div className="carousel-item relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+            src={ project2 }
             className="block w-full"
             alt="..."
           />
@@ -49,7 +53,7 @@ export const Carousel = () => {
         </div>
         <div className="carousel-item relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+            src={ project3 }
             className="block w-full"
             alt="..."
           />

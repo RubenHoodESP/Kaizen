@@ -1,0 +1,9 @@
+.carousel-item {
+    background-color: black;
+}
+
+img {
+    opacity: 0.3;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
