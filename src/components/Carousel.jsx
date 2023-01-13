@@ -4,6 +4,18 @@ import project3 from '../assets/Project-3.png'
 import './Carousel.css'
 
 export const Carousel = () => {
+
+  const handleProject = ({target}) => {
+    switch (target.id){
+      case '1':
+        return (window.open('https://journalappkaizen.netlify.app/', '_blank'));
+      case '2':
+        return (window.open('https://gifsapprubenhood.netlify.app/', '_blank'));
+      case '3':
+        return (window.open('https://todolistkaizen.netlify.app/', '_blank'));
+    }
+  }
+
   return (
     <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
       <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -31,6 +43,8 @@ export const Carousel = () => {
       <div className="carousel-inner relative w-full overflow-hidden border shadow-lg">
         <div className="carousel-item active relative float-left w-full">
           <img
+            id='1'
+            onClick={ handleProject }
             src={ project1 }
             className="block w-full"
             alt="..."
@@ -42,6 +56,8 @@ export const Carousel = () => {
         </div>
         <div className="carousel-item relative float-left w-full">
           <img
+            id='2'
+            onClick={ handleProject }
             src={ project2 }
             className="block w-full"
             alt="..."
@@ -53,6 +69,8 @@ export const Carousel = () => {
         </div>
         <div className="carousel-item relative float-left w-full">
           <img
+            id='3'
+            onClick={ handleProject }
             src={ project3 }
             className="block w-full"
             alt="..."
