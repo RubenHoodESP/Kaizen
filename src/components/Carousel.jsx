@@ -50,8 +50,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">Journal App</h5>
-            <p>ReactJS 18, MaterialUI</p>
+            <h5 className="text-6xl mb-5 font-roboto-condensed">Journal App</h5>
+            <p className='text-xl font-roboto'>ReactJS 18, MaterialUI</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -63,8 +63,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">Gifs App</h5>
-            <p>ReactJS, API calls</p>
+            <h5 className="text-6xl mb-5 font-roboto-condensed">Gifs App</h5>
+            <p className='text-xl font-roboto'>ReactJS, API calls</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -76,8 +76,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">To-Do List</h5>
-            <p>ReactJS</p>
+            <h5 className="text-6xl mb-5 font-roboto-condensed">To-Do List</h5>
+            <p className='text-xl font-roboto'>ReactJS, Local Database</p>
           </div>
         </div>
       </div>
