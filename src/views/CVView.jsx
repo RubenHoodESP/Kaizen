@@ -19,25 +19,25 @@ export const CVView = () => {
   
   const amarisJSX = (
     <div className={(hidden.amaris ? 'amaris' : 'hidden')}>
-      <p id='role' className="font-roboto-condensed text-2xl">Front-End Developer</p>
+      <p id='role' className="font-roboto-condensed text-2xl">{t('Resume.role')}</p>
       <p id='time' className="opacity-50">2022-2023</p>
-      <p id='job-description' className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod aliquid eaque facilis autem error nostrum et, distinctio temporibus deserunt est magnam corrupti minus harum dolore quisquam vitae laboriosam consectetur?</p>
+      <p id='job-description' className="mt-5">{t('Resume.description1')}</p>
     </div>
   )
   
   const nttDataJSX = (
     <div className={(hidden.nttdata ? 'nttdata' : 'hidden')}>
-      <p id='role' className="font-roboto-condensed text-2xl">Front-End Developer</p>
+      <p id='role' className="font-roboto-condensed text-2xl">{t('Resume.role')}</p>
       <p id='time' className="opacity-50">2020-2022</p>
-      <p id='job-description' className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod aliquid eaque facilis autem error nostrum et, distinctio temporibus deserunt est magnam corrupti minus harum dolore quisquam vitae laboriosam consectetur?</p>
+      <p id='job-description' className="mt-5">{t('Resume.description2')}</p>
     </div>
   )
   
   const accentureJSX = (
     <div className={(hidden.accenture ? 'accenture' : 'hidden')}>
-      <p id='role' className="font-roboto-condensed text-2xl">Front-End Developer</p>
+      <p id='role' className="font-roboto-condensed text-2xl">{t('Resume.role')}</p>
       <p id='time' className="opacity-50">2019-2020</p>
-      <p id='job-description' className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod aliquid eaque facilis autem error nostrum et, distinctio temporibus deserunt est magnam corrupti minus harum dolore quisquam vitae laboriosam consectetur?</p>
+      <p id='job-description' className="mt-5">{t('Resume.description3')}</p>
     </div>
   )
 
@@ -78,8 +78,8 @@ export const CVView = () => {
           >
             <div className="w-screen">
               <div className="mx-5 absolute inset-0 flex flex-col items-center justify-center">
-                <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume')}</p>
-                <div className="container max-w-3xl">
+                <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
+                <div className="container max-w-3xl h-40">
                   <div className="flex">
                     <div className="flex col mr-5">
                       <ul className="ml-2 text-white font-roboto text-lg">
@@ -105,7 +105,7 @@ export const CVView = () => {
     return (
       <div id="cv" className="h-screen flex bg-primary">
         <div className="mx-5 h-screen w-screen flex flex-col items-center justify-center">
-          <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume')}</p>
+          <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
           <div className="container h-52">
             <div className="flex">
               <div className="flex col">

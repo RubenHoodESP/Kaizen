@@ -30,7 +30,7 @@ export const NavBar = () => {
                             <a href="#portfolio" className="font-roboto-condensed text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">Portfolio</a>
                         </li>
                         <li id="nav_item-3" className="nav-item">
-                            <a href="#cv" className="font-roboto-condensed text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">{t('Resume')}</a>
+                            <a href="#cv" className="font-roboto-condensed text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">{t('Resume.title')}</a>
                         </li>
                         <li id="nav_item-4" className="nav-item">
                             <a href="#contact" className="font-roboto-condensed text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">{t('Contact')}</a>

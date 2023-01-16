@@ -50,8 +50,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 className="text-xl">Journal App</h5>
+            <p>ReactJS 18, MaterialUI</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -63,8 +63,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5 className="text-xl">Gifs App</h5>
+            <p>ReactJS, API calls</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -76,8 +76,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption hidden md:block absolute text-center">
-            <h5 className="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5 className="text-xl">To-Do List</h5>
+            <p>ReactJS</p>
           </div>
         </div>
       </div>
