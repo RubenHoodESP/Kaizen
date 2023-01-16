@@ -35,8 +35,8 @@ export const PortfolioView = () => {
     )
   } else {
     return (
-      <div id="portfolio" className="h-screen flex bg-secondary">
-        <div className="absolute h-screen mx-5 flex flex-col items-center justify-center">
+      <div id="portfolio" className="h-screen-50 flex bg-secondary">
+        <div className="absolute h-screen-50 mx-5 flex flex-col items-center justify-center">
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
           <div className="container max-w-6xl">
             <Carousel />
