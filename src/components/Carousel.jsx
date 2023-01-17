@@ -73,8 +73,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption absolute text-center">
-            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Gifs App</h5>
-            <p className='md:text-xl font-roboto'>ReactJS, API calls</p>
+            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Journal App</h5>
+            <p className='md:text-xl font-roboto'>ReactJS, Firebase</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -86,8 +86,8 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption absolute text-center">
-            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">To-Do List</h5>
-            <p className='md:text-xl font-roboto'>ReactJS, Local Database</p>
+            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Gifs App</h5>
+            <p className='md:text-xl font-roboto'>ReactJS, API calls</p>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
