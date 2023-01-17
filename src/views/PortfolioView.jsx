@@ -18,7 +18,7 @@ export const PortfolioView = () => {
             layers={[
             {
               image: background,
-              speed: -20
+              speed: -30
             }
             ]}
             className="h-screen"

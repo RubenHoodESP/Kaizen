@@ -6,9 +6,12 @@
     "Resume": {
         "title": "CV",
         "role": "Desarrollador Front-End",
+        "present": "Presente",
         "description1": "Tuve la oportunidad de trabajar para un cliente con compañeros de otros países. El proyecto consistió en crear desde cero una plataforma de eCommerce. Creación de componentes de forma Atómica, llamadas a APIs, diseño de estilos con Tailwind y comunicación constante en un equipo de 4 personas.",
         "description2": "Durante estos años trabajé en varios proyectos con herramientas como Angular, ReactJS, Ionic, Bootstrap, llamadas a APIs, control de versiones, etc... Mis tareas consistían desde la resolución de incidencias y optimización de código hasta la creación, diseño de componentes y liderar la comunicación entre el equipo de Back-End y Front-End.",
-        "description3": "Trabajé con las herramientas de Angular y React, aprendiendo las dinámicas de trabajar en una gran empresa con reuniones diarias, entregas periódicas (Sprints) y uso de control de versiones (GIT y Bitbucket)."
+        "description3": "Trabajé con las herramientas de Angular y React, aprendiendo las dinámicas de trabajar en una gran empresa con reuniones diarias, entregas periódicas (Sprints) y uso de control de versiones (GIT y Bitbucket).",
+        "DownloadEsp": "CV Español",
+        "DownloadEng": "CV Inglés"
     },
     "Portfolio": "Portfolio",
     "Contact": "Contacto",
