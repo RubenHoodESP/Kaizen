@@ -9,7 +9,7 @@ export const ContactView = () => {
 
   const options = {
     unobserveOnEnter: true,
-    threshold: 0.1,
+    threshold: 0.5,
   }
   const [ref, inView] = useInView(options);
   const { t } = useTranslation();
@@ -28,7 +28,7 @@ export const ContactView = () => {
               ]}
               className="h-screen"
             >
-              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
                 <p className="text-6xl text-white font-roboto-condensed font-thin mb-5">{t('Contact')}</p>
                 <ContactForm />
               </div>
@@ -39,7 +39,7 @@ export const ContactView = () => {
   } else {
     return (
       <div id="contact" className="h-screen flex bg-secondary">
-        <div ref={ref} className={"mx-5 h-screen w-screen flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+        <div ref={ref} className={"mx-5 h-screen w-screen flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-5">{t('Contact')}</p>
           <ContactForm />
         </div>

@@ -11,7 +11,7 @@ export const PortfolioView = () => {
 
   const options = {
     unobserveOnEnter: true,
-    threshold: 0.1,
+    threshold: 0.5,
   }
   const [ref, inView] = useInView(options);
   const { t } = useTranslation();
@@ -30,7 +30,7 @@ export const PortfolioView = () => {
             ]}
             className="h-screen"
           >
-            <div ref={ref} className={"absolute mx-5 inset-0 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+            <div ref={ref} className={"absolute mx-5 inset-0 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
               <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
               <div className="container max-w-6xl">
                 <Carousel />
@@ -43,7 +43,7 @@ export const PortfolioView = () => {
   } else {
     return (
       <div id="portfolio" className="h-screen-50 flex bg-secondary">
-        <div ref={ref} className={"absolute h-screen-50 mx-5 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+        <div ref={ref} className={"absolute h-screen-50 mx-5 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
           <div className="container max-w-6xl">
             <Carousel />
