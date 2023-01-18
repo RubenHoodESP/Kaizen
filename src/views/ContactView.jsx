@@ -3,9 +3,15 @@ import { PageLayout } from "../layout"
 import background from '../assets/Background-4.svg'
 import { ContactForm } from "../components"
 import { useTranslation } from 'react-i18next';
+import { useInView } from "react-hook-inview";
 
 export const ContactView = () => {
 
+  const options = {
+    unobserveOnEnter: true,
+    threshold: 0.1,
+  }
+  const [ref, inView] = useInView(options);
   const { t } = useTranslation();
   let width = window.innerWidth;
 
@@ -22,7 +28,7 @@ export const ContactView = () => {
               ]}
               className="h-screen"
             >
-              <div className="mx-5 absolute inset-0 flex flex-col items-center justify-center">
+              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
                 <p className="text-6xl text-white font-roboto-condensed font-thin mb-5">{t('Contact')}</p>
                 <ContactForm />
               </div>
@@ -33,7 +39,7 @@ export const ContactView = () => {
   } else {
     return (
       <div id="contact" className="h-screen flex bg-secondary">
-        <div className="mx-5 h-screen w-screen flex flex-col items-center justify-center">
+        <div ref={ref} className={"mx-5 h-screen w-screen flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-5">{t('Contact')}</p>
           <ContactForm />
         </div>

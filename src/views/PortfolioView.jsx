@@ -4,9 +4,16 @@ import background from '../assets/Background-2.svg'
 import { Carousel } from "../components"
 import './index.css';
 import { useTranslation } from 'react-i18next';
+import { useInView } from "react-hook-inview";
+
 
 export const PortfolioView = () => {
 
+  const options = {
+    unobserveOnEnter: true,
+    threshold: 0.1,
+  }
+  const [ref, inView] = useInView(options);
   const { t } = useTranslation();
   let width = window.innerWidth;
 
@@ -23,7 +30,7 @@ export const PortfolioView = () => {
             ]}
             className="h-screen"
           >
-            <div className="absolute mx-5 inset-0 flex flex-col items-center justify-center">
+            <div ref={ref} className={"absolute mx-5 inset-0 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
               <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
               <div className="container max-w-6xl">
                 <Carousel />
@@ -36,7 +43,7 @@ export const PortfolioView = () => {
   } else {
     return (
       <div id="portfolio" className="h-screen-50 flex bg-secondary">
-        <div className="absolute h-screen-50 mx-5 flex flex-col items-center justify-center">
+        <div ref={ref} className={"absolute h-screen-50 mx-5 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
           <div className="container max-w-6xl">
             <Carousel />

@@ -6,10 +6,16 @@ import { useTranslation } from 'react-i18next';
 import { useState } from "react";
 import cvesp from "../assets/docs/ResumeEng.pdf";
 import cveng from "../assets/docs/ResumeEng.pdf";
+import { useInView } from "react-hook-inview";
 
 
 export const CVView = () => {
   
+  const options = {
+    unobserveOnEnter: true,
+    threshold: 0.1,
+  }
+  const [ref, inView] = useInView(options);
   const { t } = useTranslation();
   let width = window.innerWidth;
   
@@ -79,7 +85,7 @@ export const CVView = () => {
             className="h-screen"
           >
             <div className="w-screen">
-              <div className="mx-5 absolute inset-0 flex flex-col items-center justify-center">
+              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
                 <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
                 <div className="container max-w-3xl">
                   <div className="flex">
@@ -110,7 +116,7 @@ export const CVView = () => {
   } else {
     return (
       <div id="cv" className="h-screen flex bg-primary">
-        <div className="mx-5 h-screen w-screen flex flex-col items-center justify-center">
+        <div ref={ref} className={"mx-5 h-screen w-screen flex flex-col items-center justify-center " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
           <div className="container h-96">
             <div className="flex">
