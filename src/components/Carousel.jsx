@@ -4,7 +4,30 @@ import project3 from '../assets/Project-3.png'
 import project4 from '../assets/Project-4.png'
 import './Carousel.css'
 
-export const Carousel = () => {
+export const Carousel = ({childToParent}) => {
+
+  const prev = {next:false, prev:true};
+  const next = {next:true, prev:false};
+
+  const handlePrev = () => {
+    if (!document.getElementById("prev").disabled) {
+      childToParent(prev);
+      document.getElementById("prev").disabled = true;
+      document.getElementById("next").disabled = true;
+      setTimeout(() => {document.getElementById("prev").disabled = false}, 700);
+      setTimeout(() => {document.getElementById("next").disabled = false}, 700);
+    }
+  };
+
+  const handleNext = () => {
+    if (!document.getElementById("next").disabled) {
+      childToParent(next);
+      document.getElementById("prev").disabled = true;
+      document.getElementById("next").disabled = true;
+      setTimeout(() => {document.getElementById("prev").disabled = false}, 700);
+      setTimeout(() => {document.getElementById("next").disabled = false}, 700);
+    }
+  };
 
   const handleProject = ({target}) => {
     switch (target.id){
@@ -17,10 +40,11 @@ export const Carousel = () => {
       case '4':
         return (window.open('https://todolistkaizen.netlify.app/', '_blank'));
     }
-  }
+  };
+
 
   return (
-    <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel" data-bs-interval="false">
       <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
         <button
           type="button"
@@ -61,7 +85,7 @@ export const Carousel = () => {
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Spotify App</h5>
             <p className='md:text-xl font-roboto'>(Work in progress...)</p>
-            <p className='md:text-xl font-roboto'>ReactJS, Tailwind css, RapidAPI</p>
+            {/* <p className='md:text-xl font-roboto'>ReactJS, Tailwind css, RapidAPI</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -74,7 +98,7 @@ export const Carousel = () => {
           />
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Journal App</h5>
-            <p className='md:text-xl font-roboto'>ReactJS, Firebase</p>
+            {/* <p className='md:text-xl font-roboto'>ReactJS, Firebase</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -87,7 +111,7 @@ export const Carousel = () => {
           />
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Gifs App</h5>
-            <p className='md:text-xl font-roboto'>ReactJS, API calls</p>
+            {/* <p className='md:text-xl font-roboto'>ReactJS, API calls</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -99,25 +123,29 @@ export const Carousel = () => {
             alt="..."
           />
           <div className="carousel-caption absolute text-center">
-            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">To-Do List</h5>
-            <p className='md:text-xl font-roboto'>ReactJS, Local Database</p>
+            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">To-Do List App</h5>
+            {/* <p className='md:text-xl font-roboto'>ReactJS, Local Database</p> */}
           </div>
         </div>
       </div>
       <button
+        id='prev'
         className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
+        onClick={handlePrev}
       >
         <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
       <button
+        id='next'
         className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
+        onClick={handleNext}
       >
         <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>

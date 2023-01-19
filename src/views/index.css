@@ -24,6 +24,10 @@ li {
    transform: scaleX(1);
 }
 
+.active_cv-item:after {
+    transform: scaleX(1);
+}
+
 .h-screen-50 {
     height: 50vh;
 }

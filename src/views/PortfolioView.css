@@ -1,0 +1,11 @@
+.fadein {
+    opacity: 0;
+    -webkit-animation: .3s ease-in-out .3s normal forwards 1 fadein;
+    animation: .3s ease-in-out .3s normal forwards 1 fadein;
+}
+
+.fadeout {
+    opacity: 100%;
+    -webkit-animation: 1 ease-in-out 0s normal forwards 1 fadeout;
+    animation: .3s ease-in-out 0s normal forwards 1 fadeout;
+}

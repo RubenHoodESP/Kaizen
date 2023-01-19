@@ -91,9 +91,9 @@ export const CVView = () => {
                   <div className="flex">
                     <div className="flex col mr-5">
                       <ul className="ml-2 text-white font-roboto text-lg">
-                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide1 }>Amaris</li>
-                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide2 }>NTTData</li>
-                        <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide3 }>Accenture</li>
+                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.amaris == true) ? 'active_cv-item' : ''}`} onClick={ hide1 }>Amaris</li>
+                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.nttdata == true) ? 'active_cv-item' : ''}`} onClick={ hide2 }>NTTData</li>
+                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.accenture == true) ? 'active_cv-item' : ''}`} onClick={ hide3 }>Accenture</li>
                       </ul>
                     </div>
                     <div className="col p-2 w-full text-white font-roboto h-60">
@@ -122,9 +122,9 @@ export const CVView = () => {
             <div className="flex">
               <div className="flex col">
                 <ul className="ml-2 text-white font-roboto text-lg">
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide1 }>Amaris</li>
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide2 }>NTTData</li>
-                  <li className="cv-item p-2 border-l font-roboto-condensed" onClick={ hide3 }>Accenture</li>
+                  <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.amaris == true) ? 'active_cv-item' : ''}`} onClick={ hide1 }>Amaris</li>
+                  <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.nttdata == true) ? 'active_cv-item' : ''}`} onClick={ hide2 }>NTTData</li>
+                  <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.accenture == true) ? 'active_cv-item' : ''}`} onClick={ hide3 }>Accenture</li>
                 </ul>
               </div>
               <div className="col p-2 w-full text-white font-roboto">
