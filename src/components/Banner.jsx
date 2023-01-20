@@ -24,7 +24,7 @@ export const Banner = () => {
         className="h-screen"
       >
         <div ref={ref} className={'mx-5 absolute inset-0 flex flex-col items-center justify-center'}>
-          <img id='logo' src={logo} alt='logo' />
+          <img id='logo' src={logo} alt='logo' className='mb-5' />
           <p id='subtitle' className='font-roboto-condensed text-4xl text-white font-light opacity-50'>{t('Intro.WebDeveloper')}</p>
           <p id='description' className='max-w-3xl font-roboto font-thin text-white mt-14 text-justify text-2xl'>{t('Intro.Description')}</p>
           <ul id='stack' className='flex h-40 max-h-40 w-2/5 flex-wrap md:text-2xl text-white font-roboto font-thin items-start list-disc list-inside flex-col mt-8'>
