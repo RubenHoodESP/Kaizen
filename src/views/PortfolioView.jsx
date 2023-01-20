@@ -16,8 +16,6 @@ let i = 1;
 
 export const PortfolioView = () => {
 
-  console.log(i);
-
   const [data, setdata] = useState({next: false, prev: false});
 
   const childToParent = (childData) => {
@@ -76,10 +74,6 @@ export const PortfolioView = () => {
         <span className="font-roboto text-white md:text-2xl">Tailwind CSS</span>
         <img src={tailwind_logo} alt="logo" />
       </div>
-      <div className="flex items-center gap-2">
-        <span className="font-roboto text-white md:text-2xl">Rapid API</span>
-        <img src={api} alt="logo" />
-      </div>
     </div>
   );
   const item3 = (
@@ -136,7 +130,7 @@ export const PortfolioView = () => {
             ]}
             className="h-screen"
           >
-            <div ref={ref} className={"absolute mx-5 inset-0 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+            <div ref={ref} className={"absolute mx-5 inset-0 -top-16 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
               <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
               <div className="container max-w-[800px]">
                 <Carousel childToParent={childToParent} />
@@ -154,8 +148,8 @@ export const PortfolioView = () => {
     )
   } else {
     return (
-      <div id="portfolio" className="h-screen flex bg-secondary">
-        <div ref={ref} className={"absolute h-screen mx-5 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+      <div id="portfolio" className="h-screen relative flex bg-secondary items-center">
+        <div ref={ref} className={"absolute mx-5 inset-0 -top-20 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
           <div className="container max-w-[800px]">
             <Carousel childToParent={childToParent} />
