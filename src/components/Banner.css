@@ -1,4 +1,4 @@
-#name {
+#logo {
     opacity: 0;
     -webkit-animation: 1s ease 1s normal forwards 1 fadein;
     animation: 1s ease 1s normal forwards 1 fadein;
@@ -20,4 +20,8 @@
     opacity: 0;
     -webkit-animation: 1s ease 2.5s normal forwards 1 fadein;
     animation: 1s ease 2.5s normal forwards 1 fadein;
+}
+
+.font-ThereBrat {
+    font-family: "ThereBrat";
 }
