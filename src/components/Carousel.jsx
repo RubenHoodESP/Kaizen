@@ -85,7 +85,6 @@ export const Carousel = ({childToParent}) => {
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Spotify App</h5>
             <p className='md:text-xl font-roboto'>(Work in progress...)</p>
-            {/* <p className='md:text-xl font-roboto'>ReactJS, Tailwind css, RapidAPI</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -98,7 +97,6 @@ export const Carousel = ({childToParent}) => {
           />
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Journal App</h5>
-            {/* <p className='md:text-xl font-roboto'>ReactJS, Firebase</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -111,7 +109,6 @@ export const Carousel = ({childToParent}) => {
           />
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Gifs App</h5>
-            {/* <p className='md:text-xl font-roboto'>ReactJS, API calls</p> */}
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
@@ -124,7 +121,6 @@ export const Carousel = ({childToParent}) => {
           />
           <div className="carousel-caption absolute text-center">
             <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">To-Do List App</h5>
-            {/* <p className='md:text-xl font-roboto'>ReactJS, Local Database</p> */}
           </div>
         </div>
       </div>
