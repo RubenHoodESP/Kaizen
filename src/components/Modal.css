@@ -1,0 +1,6 @@
+.modal-backdrop {
+    background: none !important;
+    opacity: 1 !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}

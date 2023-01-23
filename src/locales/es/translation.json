@@ -20,5 +20,9 @@
         "Email": "Tu email",
         "Message": "Tu mensaje",
         "Send": "Enviar"
+    },
+    "Modal": {
+        "state": "¡Mensaje enviado correctamente!",
+        "message": "Muchas gracias por tu mensaje. Responderé en cuanto me sea posible."
     }
 }

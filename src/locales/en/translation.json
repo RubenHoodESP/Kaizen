@@ -20,5 +20,9 @@
         "Email": "Your email",
         "Message": "Your message",
         "Send": "Send"
+    },
+    "Modal": {
+        "state": "Message sent sucesfully",
+        "message": "Thank you for message! I will keep in touch whenever I can."
     }
 }

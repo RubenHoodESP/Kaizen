@@ -4,6 +4,7 @@ import background from '../assets/Background-4.svg'
 import { ContactForm } from "../components"
 import { useTranslation } from 'react-i18next';
 import { useInView } from "react-hook-inview";
+import { Modal } from '../components'
 
 export const ContactView = () => {
 
@@ -32,6 +33,7 @@ export const ContactView = () => {
                 <p className="text-6xl text-white font-roboto-condensed font-thin mb-5">{t('Contact')}</p>
                 <ContactForm />
               </div>
+            <Modal />
             </ParallaxBanner>
           </PageLayout>
       </div>
@@ -43,6 +45,7 @@ export const ContactView = () => {
           <p className="text-6xl text-white font-roboto-condensed mb-5">{t('Contact')}</p>
           <ContactForm />
         </div>
+        <Modal />
       </div>
     )
   }

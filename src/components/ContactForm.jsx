@@ -3,7 +3,8 @@ import './ContactForm.css'
 import linkedin from '../assets/logos/linkedin.svg'
 import github from '../assets/logos/github.svg'
 import { send } from "@emailjs/browser";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { Modal } from '../components/';
 
 export const ContactForm = () => {
 
@@ -12,6 +13,9 @@ export const ContactForm = () => {
     user_name: '',
     message: ''
   });
+
+  const userName = useRef();
+  const messageText = useRef();
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +33,16 @@ export const ContactForm = () => {
     })
   }
 
+  const handleModal = () => {
+    console.log(userName.current.value);
+    console.log(messageText.current.value);
+    if ((userName.current.value != '') && (messageText.current.value != '')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value})
   }
@@ -37,11 +51,11 @@ export const ContactForm = () => {
     <>
       <form onSubmit={onSubmit} className="w-full max-w-sm m-4 p-10 border">
         <div className="flex flex-col items-center">
-          <input className="appearance-none bg-transparent font-light font-roboto border-b mb-5 py-3 w-full text-white
+          <input ref={userName} id="user_name" required className="appearance-none bg-transparent font-light font-roboto border-b mb-5 py-3 w-full text-white
           leading-tight focus:outline-none" type="text" name='user_name' placeholder={t("ContactPage.Email")} value={toSend.user_name} onChange={handleChange} aria-label="E-mail" />
-          <textarea className='font-light font-roboto bg-transparent border-b mb-5 py-3 w-full h-28 max-h-48 text-white
+          <textarea ref={messageText} id="message_text" required className='font-light font-roboto bg-transparent border-b mb-5 py-3 w-full h-28 max-h-48 text-white
           leading-tight focus:outline-none' type="textarea" name='message' placeholder={t("ContactPage.Message")} value={toSend.message} onChange={handleChange} aria-label='Message' />
-          <button className='flex-shrink-0 bg-transparent font-light font-roboto text-white border-b border-t w-20 py-2' type='submit'>{t("ContactPage.Send")}</button>
+          <button onClick={handleModal} className='flex-shrink-0 bg-transparent font-light font-roboto text-white border-b border-t w-20 py-2' type='submit' data-bs-toggle="modal" data-bs-target="#exampleModalCenter">{t("ContactPage.Send")}</button>
         </div>
       </form>
       <div className="mt-10 flex flex-row justify-around max-w-sm w-full">

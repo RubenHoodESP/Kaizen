@@ -21,7 +21,7 @@ export const NavBar = () => {
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-6 h-6" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </button>
-                <div id="navbar-default" className={`${show ? 'show' : ''} hide w-full md:w-auto md:block md:auto md:h-auto`}>
+                <div id="navbar-default" className={`${show ? 'show_navbar' : ''} hide w-full md:w-auto md:block md:auto md:h-auto`}>
                     <ul className="flex flex-col justify-end p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-light md:border-0">
                         <li id="nav_item-1" className="nav-item">
                             <a href="#intro" className="font-roboto-condensed text-lg block py-2 pr-4 text-white font-light md:bg-transparent md:text-white md:p-0" aria-current="page">Intro</a>
