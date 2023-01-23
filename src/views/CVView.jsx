@@ -4,8 +4,8 @@ import background from '../assets/Background-3.svg';
 import './index.css';
 import { useTranslation } from 'react-i18next';
 import { useState } from "react";
-import cvesp from "../assets/docs/ResumeEng.pdf";
-import cveng from "../assets/docs/ResumeEng.pdf";
+import cvesp from "../assets/docs/CVSpanish.pdf";
+import cveng from "../assets/docs/CVEnglish.pdf";
 import { useInView } from "react-hook-inview";
 
 

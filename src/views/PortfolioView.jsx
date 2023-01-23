@@ -14,6 +14,9 @@ import api_logo from  "../assets/logos/API.svg";
 import angular_logo from  "../assets/logos/angular.svg";
 import typescript_logo from  "../assets/logos/typescript.svg";
 import sass_logo from  "../assets/logos/sass.svg";
+import bootstrap_logo from  "../assets/logos/bootstrap.svg";
+import localstorage from  "../assets/logos/localstorage.svg";
+import firebase from  "../assets/logos/firebase.svg";
 
 let i = 1;
 
@@ -44,78 +47,82 @@ export const PortfolioView = () => {
 
 
   const item1 = (
-    <div id="item1" className={i === 1 ? 'fadein absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
-      <div className="flex items-center justify-center gap-2">
+    <div id="item1" className={i === 1 ? 'fadein absolute flex items-center md:w-[798px] w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex items-center md:w-[798px] w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
+      <div className="flex items-center gap-2">
         <img src={react_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">ReactJS</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={redux_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Redux</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={tailwind_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Tailwind CSS</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={api_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Rapid API</span>
       </div>
     </div>
   );
   const item2 = (
-    <div id="item2" className={i === 2 ? 'fadein absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
-      <div className="flex items-center justify-center gap-2">
+    <div id="item2" className={i === 2 ? 'fadein absolute flex items-center md:w-[798px] w-full max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex items-center md:w-[798px] w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
+      <div className="flex items-center gap-2">
         <img src={react_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">ReactJS</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={redux_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Redux</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={tailwind_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Tailwind CSS</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <img src={firebase} alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">Firebase</span>
       </div>
     </div>
   );
   const item3 = (
-    <div id="item3" className={i === 3 ? 'fadein absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
-      <div className="flex items-center justify-center gap-2">
+    <div id="item3" className={i === 3 ? 'fadein absolute flex items-center md:w-[798px] w-full max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex items-center md:w-[798px] w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
+      <div className="flex items-center gap-2">
         <img src={angular_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Angular 12</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={typescript_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Typescript</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={sass_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Sass</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={api_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">APIs</span>
       </div>
     </div>
   );
   const item4 = (
-    <div id="item4" className={i === 4 ? 'fadein absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex flex-col w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
-      <div className="flex items-center justify-center gap-2">
+    <div id="item4" className={i === 4 ? 'fadein absolute flex items-center md:w-[798px] w-full max-h-[120px] mt-14 flex-wrap gap-4 justify-between' : 'fadeout absolute flex items-center md:w-[798px] w-full max-w-[800px] max-h-[120px] mt-14 flex-wrap gap-4 justify-between'}>
+      <div className="flex items-center gap-2">
         <img src={react_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">ReactJS</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         <img src={redux_logo} alt="logo" />
         <span className="font-roboto text-white md:text-2xl">Redux</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
-        <img src={tailwind_logo} alt="logo" />
-        <span className="font-roboto text-white md:text-2xl">Tailwind CSS</span>
+      <div className="flex items-center gap-2">
+        <img src={bootstrap_logo} alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">Bootstrap</span>
       </div>
-      <div className="flex items-center justify-center gap-2">
-        <img src={api_logo} alt="logo" />
-        <span className="font-roboto text-white md:text-2xl">Rapid API</span>
+      <div className="flex items-center gap-2">
+        <img src={localstorage} alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">Local Storage</span>
       </div>
     </div>
   );
