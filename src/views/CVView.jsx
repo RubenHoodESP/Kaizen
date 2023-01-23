@@ -29,7 +29,7 @@ export const CVView = () => {
     <div className={(hidden.amaris ? 'amaris' : 'hidden')}>
       <p id='role' className="font-roboto-condensed text-2xl">{t('Resume.role')}</p>
       <p id='time' className="opacity-50 md:text-lg">Oct 2022 - {t('Resume.present')}</p>
-      <p id='job-description' className="mt-5 md:text-lg">{t('Resume.description1.1')}</p>
+      <p id='job-description' className="mt-5 md:text-lg">{t('Resume.description11')}</p>
     </div>
   )
   
