@@ -34,8 +34,6 @@ export const ContactForm = () => {
   }
 
   const handleModal = () => {
-    console.log(userName.current.value);
-    console.log(messageText.current.value);
     if ((userName.current.value != '') && (messageText.current.value != '')) {
       return true;
     } else {
@@ -55,7 +53,7 @@ export const ContactForm = () => {
           leading-tight focus:outline-none" type="text" name='user_name' placeholder={t("ContactPage.Email")} value={toSend.user_name} onChange={handleChange} aria-label="E-mail" />
           <textarea ref={messageText} id="message_text" required className='font-light font-roboto bg-transparent border-b mb-5 py-3 w-full h-28 max-h-48 text-white
           leading-tight focus:outline-none' type="textarea" name='message' placeholder={t("ContactPage.Message")} value={toSend.message} onChange={handleChange} aria-label='Message' />
-          <button onClick={handleModal} className='flex-shrink-0 bg-transparent font-light font-roboto text-white border-b border-t w-20 py-2' type='submit' data-bs-toggle="modal" data-bs-target="#exampleModalCenter">{t("ContactPage.Send")}</button>
+          <button onClick={handleModal} className='flex-shrink-0 bg-transparent font-light font-roboto text-white border-b border-t w-20 py-2' type='submit' data-bs-toggle={(toSend.user_name != '' && toSend.message != '') ? "modal" : ""} data-bs-target="#exampleModalCenter">{t("ContactPage.Send")}</button>
         </div>
       </form>
       <div className="mt-10 flex flex-row justify-around max-w-sm w-full">
