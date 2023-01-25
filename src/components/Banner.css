@@ -1,27 +1,29 @@
-#logo {
-    opacity: 0;
-    -webkit-animation: 1s ease 1s normal forwards 1 fadein;
-    animation: 1s ease 1s normal forwards 1 fadein;
-}
-
 #subtitle {
     opacity: 0;
-    -webkit-animation: 1s ease 1.5s normal forwards 1 fadein70;
-    animation: 1s ease 1.5s normal forwards 1 fadein70;
+    -webkit-animation: 1s ease 2.5s normal forwards 1 fadein70;
+    animation: 1s ease 2.5s normal forwards 1 fadein70;
 }
 
 #description {
     opacity: 0;
     -webkit-animation: 1s ease 2s normal forwards 1 fadein;
-    animation: 1s ease 2s normal forwards 1 fadein;
+    animation: 1s ease 3s normal forwards 1 fadein;
 }
 
 .stack {
     opacity: 0;
     -webkit-animation: 1s ease 2.5s normal forwards 1 fadein;
-    animation: 1s ease 2.5s normal forwards 1 fadein;
+    animation: 1s ease 3.5s normal forwards 1 fadein;
 }
 
 .font-ThereBrat {
     font-family: "ThereBrat";
+}
+
+.logo_kaizen {
+    opacity: 0;
+    position: relative;
+    z-index: 9;
+    -webkit-animation:  1s ease 1s normal forwards 1 fadein, 2s ease 3s normal forwards 1 blackout_logo;
+    animation: 1s ease 1s normal forwards 1 fadein, 0s ease 4s normal forwards 1 blackout_logo;
 }

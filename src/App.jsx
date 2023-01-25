@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <ParallaxProvider>
+        <div className='layer'></div>
         <MainPage />
       </ParallaxProvider>
     </div>

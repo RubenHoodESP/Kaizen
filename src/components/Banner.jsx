@@ -35,7 +35,7 @@ export const Banner = () => {
         className="h-screen"
       >
         <div ref={ref} className={'mx-5 absolute inset-0 flex flex-col items-center justify-center'}>
-          <img id='logo' src={logo} alt='logo' className='mb-5' />
+          <img id='logo' src={logo} alt='logo' className='mb-5 logo_kaizen' />
           <p id='subtitle' className='font-roboto-condensed text-4xl text-white font-light opacity-50'>{t('Intro.WebDeveloper')}</p>
           <p id='description' className='max-w-3xl font-roboto font-thin text-white mt-14 text-justify text-2xl'>{t('Intro.Description')}</p>
           <div className='stack flex h-36 max-h-40 flex-wrap justify-between items-center mt-8 gap-6'>
@@ -56,9 +56,9 @@ export const Banner = () => {
     )
   } else {
     return (
-      <div className="h-screen flex bg-primary">
+      <div className="h-screen flex bg-primary relative">
         <div ref={ref} className={'mx-10 md:mx-5 absolute inset-0 flex flex-col items-center justify-center'}>
-        <img id='logo' src={logo} alt='logo' className='mb-5' />
+        <img id='logo' src={logo} alt='logo' className='mb-5 logo_kaizen' />
           <p id='subtitle' className='font-roboto-condensed text-3xl text-white font-light opacity-70'>{t('Intro.WebDeveloper')}</p>
           <p id='description' className='max-w-2xl font-roboto font-thin text-white mt-14 text-xl'>{t('Intro.Description')}</p>
           <div className='stack flex h-36 max-h-40 flex-wrap justify-between items-center mt-8 gap-6'>
