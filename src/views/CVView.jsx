@@ -7,6 +7,7 @@ import { useState } from "react";
 import cvesp from "../assets/docs/CVSpanish.pdf";
 import cveng from "../assets/docs/CVEnglish.pdf";
 import { useInView } from "react-hook-inview";
+import './CVView.css';
 
 
 export const CVView = () => {
@@ -104,8 +105,8 @@ export const CVView = () => {
                   </div>
                 </div>
                   <div className="col w-full text-white flex gap-5 justify-center mt-10 font-roboto">
-                    <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center">{t('Resume.DownloadEsp')}</a>
-                    <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center">{t('Resume.DownloadEng')}</a>
+                    <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEsp')}</a>
+                    <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEng')}</a>
                   </div>
               </div>
             </div>

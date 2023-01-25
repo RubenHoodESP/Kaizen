@@ -1,4 +1,4 @@
-form {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+.formBlur {
+    background-color: rgba(0, 0, 0, 0.15);
+    animation: 2s ease 0s normal forwards 1 formBlur;
 }

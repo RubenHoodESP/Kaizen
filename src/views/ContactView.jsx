@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useInView } from "react-hook-inview";
 import { Modal } from '../components'
 
+
 export const ContactView = () => {
 
   const options = {
@@ -18,7 +19,7 @@ export const ContactView = () => {
 
   if (width > '640') {
     return (
-      <div id="contact" className="">
+      <div id="contact">
           <PageLayout>
             <ParallaxBanner
               layers={[
@@ -29,8 +30,8 @@ export const ContactView = () => {
               ]}
               className="h-screen"
             >
-              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
-                <p className="text-6xl text-white font-roboto-condensed font-thin mb-5">{t('Contact')}</p>
+              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center"}>
+                <p className={"text-6xl text-white font-roboto-condensed font-thin mb-5 opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>{t('Contact')}</p>
                 <ContactForm />
               </div>
             <Modal />
