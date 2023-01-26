@@ -136,8 +136,8 @@ export const CVView = () => {
             </div>
           </div>
           <div className="col w-full text-white flex gap-5 justify-center mt-10 font-roboto">
-            <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center">{t('Resume.DownloadEsp')}</a>
-            <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center">{t('Resume.DownloadEng')}</a>
+            <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center bg-button">{t('Resume.DownloadEsp')}</a>
+            <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center bg-button">{t('Resume.DownloadEng')}</a>
           </div>
         </div>
       </div>

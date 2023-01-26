@@ -67,3 +67,7 @@ nav {
 .nav-item:hover:after {
     width: 100%;
 }
+
+.bg-custom-nav {
+    background-color: rgba(0, 0, 0, 0.25);
+}
