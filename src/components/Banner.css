@@ -23,7 +23,7 @@
 .logo_kaizen {
     opacity: 0;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     -webkit-animation:  1s ease 1s normal forwards 1 fadein, 2s ease 3s normal forwards 1 blackout_logo;
     animation: 1s ease 1s normal forwards 1 fadein, 0s ease 4s normal forwards 1 blackout_logo;
 }

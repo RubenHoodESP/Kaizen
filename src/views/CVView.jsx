@@ -1,5 +1,4 @@
-import { ParallaxBanner } from "react-scroll-parallax";
-import { PageLayout } from "../layout";
+import { ParallaxLayout } from "../layout";
 import background from '../assets/Background-3.svg';
 import './index.css';
 import { useTranslation } from 'react-i18next';
@@ -18,7 +17,6 @@ export const CVView = () => {
   }
   const [ref, inView] = useInView(options);
   const { t } = useTranslation();
-  let width = window.innerWidth;
   
   const [hidden, sethidden] = useState({
     amaris: true,
@@ -38,7 +36,7 @@ export const CVView = () => {
     <div className={(hidden.nttdata ? 'nttdata' : 'hidden')}>
       <p id='role' className="font-roboto-condensed text-2xl">{t('Resume.role')}</p>
       <p id='time' className="opacity-50 md:text-lg">Sep 2020 - Sep 2022</p>
-      <p id='job-description' className="mt-5 md:text-lg">{t('Resume.description2')}</p>
+      <p id='job-description' className="mt-5 text md:text-lg">{t('Resume.description2')}</p>
     </div>
   )
   
@@ -72,75 +70,34 @@ export const CVView = () => {
     });
   }
 
-  if (width > '640') {
-    return (
-      <div id="cv">
-        <PageLayout>
-          <ParallaxBanner
-            layers={[
-            {
-              image: background,
-              speed: -30
-            }
-            ]}
-            className="h-screen"
-          >
-            <div className="w-screen">
-              <div ref={ref} className={"mx-5 absolute inset-0 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
-                <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
-                <div className="container max-w-3xl">
-                  <div className="flex">
-                    <div className="flex col mr-5">
-                      <ul className="ml-2 text-white font-roboto text-lg">
-                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.amaris == true) ? 'active_cv-item' : ''}`} onClick={ hide1 }>Amaris</li>
-                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.nttdata == true) ? 'active_cv-item' : ''}`} onClick={ hide2 }>NTTData</li>
-                        <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.accenture == true) ? 'active_cv-item' : ''}`} onClick={ hide3 }>Accenture</li>
-                      </ul>
-                    </div>
-                    <div className="col p-2 w-full text-white font-roboto h-60">
-                      { amarisJSX }
-                      { nttDataJSX }
-                      { accentureJSX }
-                    </div>
-                  </div>
-                </div>
-                  <div className="col w-full text-white flex gap-5 justify-center mt-10 font-roboto">
-                    <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEsp')}</a>
-                    <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEng')}</a>
-                  </div>
-              </div>
-            </div>
-          </ParallaxBanner>
-        </PageLayout>
-      </div>
-    )
-  } else {
-    return (
-      <div id="cv" className="h-screen flex bg-primary">
-        <div ref={ref} className={"mx-5 h-screen w-screen flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+  return (
+    <ParallaxLayout>
+      <div className='layer'/>
+      <div className="w-screen">
+        <div ref={ref} className={"mx-5 mt-32 md:mt-auto h-screen flex flex-col items-center md:justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
-          <div className="container h-96">
-            <div className="flex">
-              <div className="flex col">
+          <div className="container max-w-3xl">
+            <div className="flex h-[450px] md:h-[250px]">
+              <div className="flex col mr-5">
                 <ul className="ml-2 text-white font-roboto text-lg">
                   <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.amaris == true) ? 'active_cv-item' : ''}`} onClick={ hide1 }>Amaris</li>
                   <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.nttdata == true) ? 'active_cv-item' : ''}`} onClick={ hide2 }>NTTData</li>
                   <li className={`cv-item p-2 border-l font-roboto-condensed ${(hidden.accenture == true) ? 'active_cv-item' : ''}`} onClick={ hide3 }>Accenture</li>
                 </ul>
               </div>
-              <div className="col p-2 w-full text-white font-roboto">
+              <div className="col p-2 w-full text-white font-roboto h-60">
                 { amarisJSX }
                 { nttDataJSX }
                 { accentureJSX }
               </div>
             </div>
           </div>
-          <div className="col w-full text-white flex gap-5 justify-center mt-10 font-roboto">
-            <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center bg-button">{t('Resume.DownloadEsp')}</a>
-            <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center bg-button">{t('Resume.DownloadEng')}</a>
-          </div>
+            <div className="col w-full text-white flex gap-5 justify-center mt-10 font-roboto">
+              <a href={ cvesp } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEsp')}</a>
+              <a href={ cveng } target="_blank" className="download_button border p-4 w-32 text-center shadow-lg bg-button">{t('Resume.DownloadEng')}</a>
+            </div>
         </div>
       </div>
-    )
-  }
+    </ParallaxLayout>
+  )
 }

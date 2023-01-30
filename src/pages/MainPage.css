@@ -1,4 +1,24 @@
 
+.parallax_wrapper{
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 1px;
+
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(20);
+}
+
+
 @media (min-width: 768px) {
     .snap {
         scroll-snap-align: center;

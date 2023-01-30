@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
-}
 
 .notview {
     opacity: 0%;
@@ -17,10 +13,6 @@ html {
     transition: opacity 1s ease-in;
 }
 
-/* #navbar {
-    -webkit-animation: 2s ease 0s normal forwards 1 fadein;
-    animation: 2s ease 0s normal forwards 1 fadein;
-} */
 
 @keyframes fadein {
     0% { opacity:0; }

@@ -1,5 +1,4 @@
-import { ParallaxBanner } from "react-scroll-parallax"
-import { PageLayout } from "../layout"
+import { ParallaxLayout } from "../layout"
 import background from '../assets/Background-2.svg'
 import { Carousel } from "../components"
 import './index.css';
@@ -127,51 +126,21 @@ export const PortfolioView = () => {
     </div>
   );
 
-  if (width > '640') {
-    return (
-      <div id="portfolio">
-        <PageLayout>
-          <ParallaxBanner
-            layers={[
-            {
-              image: background,
-              speed: -30
-            }
-            ]}
-            className="h-screen"
-          >
-            <div ref={ref} className={"absolute mx-5 inset-0 -top-16 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
-              <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
-              <div className="container max-w-[800px]">
-                <Carousel childToParent={childToParent} />
-              </div>
-              <div className="relative w-[800px]">
-                { item1 }
-                { item2 }
-                { item3 }
-                { item4 }
-              </div>
-            </div>
-          </ParallaxBanner>
-        </PageLayout>
-      </div>
-    )
-  } else {
-    return (
-      <div id="portfolio" className="h-screen relative flex bg-secondary items-center">
-        <div ref={ref} className={"absolute mx-5 inset-0 -top-20 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
-          <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
-          <div className="container max-w-[800px]">
-            <Carousel childToParent={childToParent} />
-          </div>
-          <div className="relative w-[300px]">
-            { item1 }
-            { item2 }
-            { item3 }
-            { item4 }
-          </div>
+  return (
+    <ParallaxLayout>
+      <div className='layer'/>
+      <div ref={ref} className={"h-screen mt-32 md:mt-auto mx-5 flex flex-col items-center md:justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+        <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
+        <div className="container max-w-[800px]">
+          <Carousel childToParent={childToParent} />
+        </div>
+        <div className="relative w-full md:w-[800px]">
+          { item1 }
+          { item2 }
+          { item3 }
+          { item4 }
         </div>
       </div>
-    )
-  }
+    </ParallaxLayout>
+  )
 }
