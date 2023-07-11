@@ -72,16 +72,16 @@ export const PortfolioView = () => {
         <span className="font-roboto text-white md:text-2xl">ReactJS</span>
       </div>
       <div className="flex items-center gap-2">
-        <img src={redux_logo} alt="logo" />
-        <span className="font-roboto text-white md:text-2xl">Redux</span>
+        <img src={typescript_logo} alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">Typescript</span>
       </div>
       <div className="flex items-center gap-2">
-        <img src={tailwind_logo} alt="logo" />
-        <span className="font-roboto text-white md:text-2xl">Tailwind CSS</span>
+        <img src='material-ui-logo.svg' alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">MaterialUI</span>
       </div>
       <div className="flex items-center gap-2">
-        <img src={firebase} alt="logo" />
-        <span className="font-roboto text-white md:text-2xl">Firebase</span>
+        <img src='vitejs.svg' alt="logo" />
+        <span className="font-roboto text-white md:text-2xl">Vite</span>
       </div>
     </div>
   );
