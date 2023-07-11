@@ -129,7 +129,7 @@ export const PortfolioView = () => {
   return (
     <ParallaxLayout>
       <div className='layer'/>
-      <div ref={ref} className={"h-screen mt-32 md:mt-auto mx-5 flex flex-col items-center md:justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+      <div ref={ref} className={"h-screen mt-32 md:mt-auto mx-5 flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
         <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Portfolio')}</p>
         <div className="container max-w-[800px]">
           <Carousel childToParent={childToParent} />

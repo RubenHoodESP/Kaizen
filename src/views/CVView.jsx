@@ -74,7 +74,7 @@ export const CVView = () => {
     <ParallaxLayout>
       <div className='layer'/>
       <div className="w-screen">
-        <div ref={ref} className={"mx-5 mt-32 md:mt-auto h-screen flex flex-col items-center md:justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
+        <div ref={ref} className={"mx-5 mt-32 md:mt-auto h-screen flex flex-col items-center justify-center opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>
           <p className="text-6xl text-white font-roboto-condensed mb-8">{t('Resume.title')}</p>
           <div className="container max-w-3xl">
             <div className="flex h-[450px] md:h-[250px]">

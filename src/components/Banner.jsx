@@ -23,7 +23,7 @@ export const Banner = () => {
   const { t } = useTranslation();
 
     return (
-      <div ref={ref} className='flex flex-col h-screen md:justify-center mt-32 md:mt-auto items-center mx-10'>
+      <div ref={ref} className='flex flex-col h-screen justify-center mt-32 md:mt-auto items-center mx-10'>
         <img id='logo' src={logo} alt='logo' className='mb-5 logo_kaizen' />
         <div className='layer'/>
         <p id='subtitle' className='font-roboto-condensed text-3xl md:text-4xl text-white font-light opacity-50'>{t('Intro.WebDeveloper')}</p>

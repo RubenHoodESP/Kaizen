@@ -18,7 +18,7 @@ export const ContactView = () => {
   return (
     <ParallaxLayout>
       <div className='layer'/>
-      <div ref={ref} className={"mx-5 mt-32 md:mt-auto h-screen flex flex-col items-center md:justify-center"}>
+      <div ref={ref} className={"mx-5 mt-32 md:mt-auto h-screen flex flex-col items-center justify-center"}>
         <p className={"text-6xl text-white font-roboto-condensed font-thin mb-5 opacity-0 " + (inView ? 'motion-safe:animate-fadeIn' : '')}>{t('Contact')}</p>
         <ContactForm />
       </div>
