@@ -34,7 +34,7 @@ export const Carousel = ({childToParent}) => {
       case '1':
         return (window.open('https://spotifykaizen.netlify.app/', '_blank'));
       case '2':
-        return (window.open('https://journalappkaizen.netlify.app/', '_blank'));
+        return (window.open('https://daniel-mere.netlify.app/', '_blank'));
       case '3':
         return (window.open('https://gifsapprubenhood.netlify.app/', '_blank'));
       case '4':
