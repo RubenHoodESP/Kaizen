@@ -1,14 +1,12 @@
 import { Banner } from "../components";
-import { PageLayout } from "../layout";
+import { ParallaxLayout } from "../layout/ParallaxLayout";
 
 
 export const IntroductionView = () => {
 
   return (
-    <div id="intro">
-      <PageLayout>
-        <Banner />
-      </PageLayout>
-    </div>
+    <ParallaxLayout>
+      <Banner />
+    </ParallaxLayout>
   )
 }

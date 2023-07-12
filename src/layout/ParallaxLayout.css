@@ -1,0 +1,9 @@
+
+.parallax_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
