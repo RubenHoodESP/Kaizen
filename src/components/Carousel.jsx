@@ -2,6 +2,7 @@ import project1 from '../assets/Project-1.png'
 import project2 from '../assets/Project-2.png'
 import project3 from '../assets/Project-3.png'
 import project4 from '../assets/Project-4.png'
+// import project5 from 'DanielMere-bg.jpg'
 import './Carousel.css'
 
 export const Carousel = ({childToParent}) => {
@@ -34,7 +35,7 @@ export const Carousel = ({childToParent}) => {
       case '1':
         return (window.open('https://spotifykaizen.netlify.app/', '_blank'));
       case '2':
-        return (window.open('https://journalappkaizen.netlify.app/', '_blank'));
+        return (window.open('https://danielmere.netlify.app/', '_blank'));
       case '3':
         return (window.open('https://gifsapprubenhood.netlify.app/', '_blank'));
       case '4':
@@ -91,13 +92,12 @@ export const Carousel = ({childToParent}) => {
           <img
             id='2'
             onClick={ handleProject }
-            src={ project1 }
+            src='DanielMere-bg.jpg'
             className="block w-full"
             alt="..."
           />
           <div className="carousel-caption absolute text-center">
-            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Journal App</h5>
-            <p className='md:text-xl font-roboto'>(Work in progress...)</p>
+            <h5 className="text-3xl md:text-6xl mb-5 font-roboto-condensed">Freelance Web</h5>
           </div>
         </div>
         <div className="carousel-item relative float-left w-full">
